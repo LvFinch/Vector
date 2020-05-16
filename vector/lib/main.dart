@@ -1,9 +1,18 @@
+/*
+ * -> Author : Akko
+ * -> Date : 2020-05-16 21:49:51
+ * -> LastEditTime : 2020-05-17 01:09:00
+ * -> LastEditors : Akko
+ * -> Description : Vector - A Music APP
+ * -> FilePath : \vector\lib\main.dart
+ * -> Copyright  © 2020 Akko All rights reserved.
+ */
 import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
-import './pages/test.dart';
+// import './pages/test.dart';
 import './pages/home.dart';
 
 void main() {
@@ -22,10 +31,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vector',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.lightBlue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomePage(title: 'Vector'),
+      home: HomePage(),
     );
   }
 }
