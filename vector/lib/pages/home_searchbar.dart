@@ -1,23 +1,21 @@
 /*
  * -> Author : Akko
  * -> Date : 2020-05-17 00:34:20
- * -> LastEditTime : 2020-05-17 14:01:20
+ * -> LastEditTime : 2020-05-18 00:16:26
  * -> LastEditors : Akko
  * -> Description : 
  * -> FilePath : \vector\lib\pages\home_searchbar.dart
  * -> Copyright  © 2020 Akko All rights reserved.
- */ 
+ */
 import 'package:flutter/material.dart';
 
-import '../assets/data/home_searchbar_assets.dart';
+import 'package:vector/assets/data/home_searchbar_assets.dart';
 
 class searchBarDelegate extends SearchDelegate<String> {
 //重写右侧的图标
 
   @override
   List<Widget> buildActions(BuildContext context) {
-    // TODO: implement buildActions
-
     return [
       IconButton(
         icon: Icon(Icons.clear),
