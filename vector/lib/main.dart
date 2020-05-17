@@ -1,7 +1,7 @@
 /*
  * -> Author : Akko
  * -> Date : 2020-05-16 21:49:51
- * -> LastEditTime : 2020-05-17 01:09:00
+ * -> LastEditTime : 2020-05-17 17:35:58
  * -> LastEditors : Akko
  * -> Description : Vector - A Music APP
  * -> FilePath : \vector\lib\main.dart
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Vector',
+      title: 'Vector 🎵',
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
