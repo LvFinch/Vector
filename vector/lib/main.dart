@@ -1,7 +1,7 @@
 /*
  * -> Author : Akko
  * -> Date : 2020-05-16 21:49:51
- * -> LastEditTime : 2020-05-17 17:35:58
+ * -> LastEditTime : 2020-05-17 20:15:28
  * -> LastEditors : Akko
  * -> Description : Vector - A Music APP
  * -> FilePath : \vector\lib\main.dart
@@ -11,9 +11,9 @@ import 'dart:io';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:vector/pages/home.dart';
 
 // import './pages/test.dart';
-import './pages/home.dart';
 
 void main() {
   runApp(MyApp());
