@@ -13,8 +13,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:vector/pages/home.dart';
 
-// import './pages/test.dart';
-
 void main() {
   runApp(MyApp());
   if (Platform.isAndroid) {
