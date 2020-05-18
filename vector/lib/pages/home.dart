@@ -1,18 +1,20 @@
 /*
  * -> Author : Akko
  * -> Date : 2020-05-16 23:19:43
- * -> LastEditTime : 2020-05-18 00:26:10
+ * -> LastEditTime : 2020-05-18 16:03:20
  * -> LastEditors : Akko
  * -> Description : Vector Home
  * -> FilePath : \vector\lib\pages\home.dart
  * -> Copyright  © 2020 Akko All rights reserved.
  */
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 // import 'package:line_icons/line_icons.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 import 'package:vector/pages/home_searchbar.dart';
+import 'package:vector/widgets/widgets_banner.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -205,14 +207,30 @@ class _SettingPage extends MaterialPageRoute<Null> {
   _SettingPage()
       : super(builder: (BuildContext context) {
           return Scaffold(
-            appBar: AppBar(
-              title: Text('设置'),
-              centerTitle: true,
-              elevation: 1.0,
-            ),
-            body: Center(
-              child: Text('TODO'),
-            ),
-          );
+              appBar: AppBar(
+                title: Text('设置'),
+                centerTitle: true,
+                elevation: 1.0,
+              ),
+              // body: Center(
+              //   child: Text('TODO'),
+              // ),
+              // body: CustomBanner(List()),
+              body: Swiper(
+                itemBuilder: (BuildContext context, int index) {
+                  // return Align(
+                  //   alignment: Alignment.topCenter,
+                  //   child: ClipRRect(
+                  //     borderRadius: BorderRadius.only(
+                  //       topLeft:Radius.circular(30),
+                  //       topRight:Radius.circular(30),
+                  //     ),
+                  // );,
+                  return Image.asset("img/test.jpg");
+                },
+                itemCount: 10,
+                viewportFraction: 0.8,
+                scale: 0.9,
+              ));
         });
 }
